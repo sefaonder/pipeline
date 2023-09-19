@@ -23,7 +23,7 @@ jobs:
     - name: Build the Docker image
       run: docker build -t pipeline .
     - name: Tag the repository
-      run: docker tag local-image:latest sefaonder101/pipeline:latest
+      run: docker tag ubuntu:latest sefaonder101/pipeline:latest
     - name: Push to Dockerhub
       run: docker push sefaonder101/pipeline:latest
       
